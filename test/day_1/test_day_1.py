@@ -14,9 +14,11 @@ def test_line_1() -> str:
 def test_line_2() -> str:
     return 'a1b2c3d4e5f'
 
+
 @pytest.fixture
-def day_1_test_input()->List[str]:
-    return['1abc2','pqr3stu8vwx','a1b2c3d4e5f','treb7uchet']
+def day_1_test_input() -> List[str]:
+    return ['1abc2', 'pqr3stu8vwx', 'a1b2c3d4e5f', 'treb7uchet']
+
 
 def test_get_digits_returns_expected_val_for_test_line_1(test_line_1) -> None:
     expected_result = ['1', '2']
@@ -40,6 +42,7 @@ def test_combine_digits_for_array_of_more_than_two_numbers() -> None:
     expected_result = 15
     actual_result = combine_digits(['1', '2', '3', '4', '5'])
     assert actual_result == expected_result
+
 
 def test_solve_day_1_part_1(day_1_test_input):
     expected = 142

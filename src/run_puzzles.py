@@ -9,5 +9,6 @@ def day_1():
     result = solve_day_1_part_1(input)
     print(result)
 
+
 if __name__ == "__main__":
-   day_1()
+    day_1()
