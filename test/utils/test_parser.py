@@ -26,4 +26,3 @@ def test_read_list_from_file_as_int_list():
     expected_result = [[1, 2], [3, 4, 5]]
     result = read_list_from_file_as_int_list(Path('./resources/test_int_list.txt'))
     assert result == expected_result
-
